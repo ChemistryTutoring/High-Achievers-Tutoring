@@ -16,7 +16,8 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.7;
+            background-color: #ffffff;
         }
 
         header {
@@ -27,14 +28,14 @@
         }
 
         header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 15px;
+            font-size: 4rem;
+            margin-bottom: 20px;
         }
 
         header p {
-            font-size: 1.3rem;
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto 30px;
+            font-size: 1.3rem;
         }
 
         .button {
@@ -42,9 +43,10 @@
             background: #2563eb;
             color: white;
             text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 6px;
+            padding: 15px 30px;
+            border-radius: 8px;
             font-weight: bold;
+            transition: 0.3s;
         }
 
         .button:hover {
@@ -54,71 +56,76 @@
         section {
             max-width: 1100px;
             margin: auto;
-            padding: 70px 20px;
+            padding: 80px 20px;
         }
 
         h2 {
             text-align: center;
             color: #0f172a;
             margin-bottom: 30px;
-        }
-
-        .subjects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .card {
-            flex: 1;
-            min-width: 250px;
-            background: #f8fafc;
-            padding: 25px;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #0f172a;
+            font-size: 2rem;
         }
 
         .about {
             text-align: center;
+            max-width: 850px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        .reasons {
             max-width: 800px;
             margin: auto;
         }
 
-        .benefits {
-            max-width: 700px;
-            margin: auto;
-        }
-
-        .benefits li {
-            margin-bottom: 12px;
+        .reasons li {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
         }
 
         .contact {
-            text-align: center;
             background: #f8fafc;
-            border-radius: 10px;
-            padding: 40px;
+            padding: 50px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
         }
 
         footer {
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
         }
 
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5rem;
+                font-size: 2.7rem;
             }
 
-            .subjects {
-                flex-direction: column;
+            header p {
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -127,89 +134,81 @@
 <body>
 
 <header>
+
     <h1>High Achievers Tutoring</h1>
 
     <p>
-        Expert tutoring designed to help motivated students develop confidence,
-        master difficult concepts, and achieve outstanding results in Chemistry.
+        Expert chemistry tutoring designed to help ambitious students build confidence,
+        master challenging concepts, and achieve exceptional academic results.
     </p>
 
-    <a href="mailto:ekativhu@stt.org" class="button">
+    <a href="mailto:chemtutoringachievers@gmail.com" class="button">
         Book a Consultation
     </a>
+
 </header>
 
 <section>
+
     <h2>About</h2>
 
     <div class="about">
         <p>
-            High Achievers Tutoring provides personalized academic support for
-            students seeking excellence in Chemistry. Lessons are tailored to each
-            student's goals, strengths, and learning style, with a focus on deep
-            understanding and examination success.
+            High Achievers Tutoring provides personalized one-to-one chemistry tutoring
+            for motivated students seeking academic excellence. Every lesson is tailored
+            to the individual's needs, helping students strengthen understanding,
+            improve grades, and develop long-term confidence in chemistry.
         </p>
     </div>
+
 </section>
 
 <section>
-    <h2>Subjects</h2>
+
+    <h2>Subjects Offered</h2>
 
     <div class="subjects">
 
         <div class="card">
             <h3>IB Chemistry</h3>
             <p>
-                Comprehensive support for SL and HL students, including exam
-                preparation and IA guidance.
+                Comprehensive support for both SL and HL students including exam preparation,
+                revision planning, and Internal Assessment guidance.
             </p>
         </div>
 
         <div class="card">
             <h3>AP Chemistry</h3>
             <p>
-                Structured tutoring focused on content mastery and exam success.
+                Structured tutoring focused on mastering key content and achieving success
+                on the AP examination.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Organic Chemistry</h3>
+            <p>
+                Build expertise in reaction mechanisms, synthesis, nomenclature, and
+                problem-solving strategies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>MCAT Chemistry</h3>
+            <p>
+                Targeted preparation for pre-medical students covering general and organic
+                chemistry concepts tested on the MCAT.
             </p>
         </div>
 
         <div class="card">
             <h3>General Chemistry</h3>
             <p>
-                Support for high school and introductory college chemistry courses.
+                Support for high school, college, and university chemistry courses.
             </p>
         </div>
 
-    </div>
-</section>
-
-<section>
-    <h2>Why Choose High Achievers Tutoring?</h2>
-
-    <ul class="benefits">
-        <li>✓ One-to-one personalized instruction</li>
-        <li>✓ Online sessions with flexible scheduling</li>
-        <li>✓ Clear explanations of difficult concepts</li>
-        <li>✓ Exam-focused strategies and revision planning</li>
-        <li>✓ Supportive and engaging learning environment</li>
-    </ul>
-</section>
-
-<section>
-    <div class="contact">
-        <h2>Contact</h2>
-
-        <p><strong>Email:</strong> ekativhu@stt.org</p>
-        <br>
-        <p>
-            Contact High Achievers Tutoring to discuss your goals and arrange an
-            introductory consultation.
-        </p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 High Achievers Tutoring. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+        <div class="card">
+            <h3>Study Skills & Exam Preparation</h3>
+            <p>
+                Revision techniques, exam strategies, and academic coaching
